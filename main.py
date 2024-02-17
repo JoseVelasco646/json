@@ -2,11 +2,11 @@ import json
 
 def cargar_datos(ruta):
     with open(ruta) as contenido:
-        base_de_datos = json.load(contenido)
-        for entrada in base_de_datos:
+        resultado = json.load(contenido)
+        for entrada in resultado:
             duracion = entrada.get('duracion', '')
-            print(duracion)
+            print(resultado)
 
 if __name__ == '__main__':
-    ruta = 'automatas/base_de_datos.json'
+    ruta = 'datos.json'
     cargar_datos(ruta)
