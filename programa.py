@@ -24,3 +24,4 @@ print(base_de_datos)
 with open('base_de_datos.json' , 'w') as archivo:
     json.dump(base_de_datos, archivo)
     print("archivo guardado")
+    print("hola")
